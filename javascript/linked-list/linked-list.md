@@ -1,0 +1,1 @@
+![Linked List](LL.jpg)
