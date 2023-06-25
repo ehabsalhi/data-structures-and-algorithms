@@ -41,7 +41,7 @@ class Node {
          let str = ''
  
          while(currentStr){
-             str += `{${currentStr.data}} => ` 
+             str += `{${currentStr.data} => ` 
              currentStr = currentStr.next
          }
           str += currentStr
