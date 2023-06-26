@@ -9,11 +9,12 @@ class Node {
 class LinkedList {
      constructor (){
           this.head = null,
-          this.size = 0
+          this.size = -1
      }
 
      addOne(val){
           this.head = new Node(val , this.head)
+          this.size++
      }
 
      addToEnd(val){
@@ -80,6 +81,25 @@ class LinkedList {
            str += currentStr
           
           return str
+      }
+      getIndex (num){
+          if(num < 0){ return 'The Num is not a positive integer'}
+          let current = this.head
+          let index = this.size
+
+
+
+          while(current){
+              if(num === index) {
+               //    console.log(current.value); 
+                  return current.value
+              }
+              index--
+              current = current.next
+              
+          }
+          // console.log('Not Exist !!');
+          return 'Not Exist !!'
       }
 
 
