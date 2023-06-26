@@ -56,5 +56,44 @@ it('Can successfully add a node to the end of the linked list', () => {
      list.insertAfter(11, 12);
      expect(list.toString()).toBe('11 => 12 => null');
    })
+//==================================================
+//           Code Challenge: Class 07
+//==================================================
+   it('Where k is not a positive integer', () => {
+     const list = new LinkedList();
+     list.addOne(10);
+     list.addOne(20);
+     list.addOne(30);
+     expect(list.getIndex(-1)).toBe('The Num is not a positive integer');
+   })
+   it('Where k is greater than the length of the linked list', () => {
+     const list = new LinkedList();
+     list.addOne(10);
+     list.addOne(20);
+     list.addOne(30);
+     expect(list.getIndex(100)).toBe('Not Exist !!');
+   })
+   it('Where k and the length of the list are the same', () => {
+     const list = new LinkedList();
+     list.addOne(10);
+     list.addOne(20);
+     list.addOne(30);
+     expect(list.getIndex(2)).toBe(30);
+
+   })
+   it('Where the linked list is of a size 1', () => {
+     const list = new LinkedList();
+     list.addOne(10);
+     expect(list.getIndex(0)).toBe(10);
+   })
+
+   it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    const list = new LinkedList();
+    list.addOne(10);
+    list.addOne(20);
+    list.addOne(30);
+    expect(list.getIndex(1)).toBe(20);
+
+  })
 
 });

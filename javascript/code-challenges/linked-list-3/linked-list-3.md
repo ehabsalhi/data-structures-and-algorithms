@@ -1,1 +1,1 @@
-![Linked list](Untitled%20(14).jpg)
+![Linked list](Untitled%20(15).jpg)
