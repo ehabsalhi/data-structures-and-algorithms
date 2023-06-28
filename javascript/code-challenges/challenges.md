@@ -7,3 +7,5 @@
 >[Reduce challenge](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/13)
 > 
 >[Value vs. Reference](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/14)
+> 
+> [array methods](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/18)
