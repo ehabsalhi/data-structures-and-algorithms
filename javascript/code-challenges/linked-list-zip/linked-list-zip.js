@@ -91,23 +91,148 @@ class LinkedList {
 
           while(current){
               if(num === index) {
-               //    console.log(current.value); 
                   return current.value
               }
               index--
               current = current.next
               
           }
-          // console.log('Not Exist !!');
           return 'Not Exist !!'
       }
 
+      showAllInConsole(){
+        let current = this.head
+
+        while(current){
+          console.log(current.value);
+          current = current.next
+        }
+
+      }
+
+      showAll(){
+        let current = this.head
+        let arr = []
+        while(current){
+           arr.push(current.value)
+           current = current.next
+        }
+        return arr
+      }
+}
+
+
+class LL_Tow {
+
+     constructor(){
+     this.head = null,
+     this.size = -1
+
+     }
+
+     addOneTOLL_Tow(val){
+
+     this.head = new Node(val , this.head)
+     this.size++
+
+     }
+
+     toString(){
+     let currentStr = this.head
+     let str = ''
+
+     while(currentStr){
+          str += `${currentStr.value} => ` 
+          currentStr = currentStr.next
+     }
+          str += currentStr
+     
+     return str
+     }
+
+
+
+     showAll(){
+     let current = this.head
+     let arr = []
+     while(current){
+          arr.push(current.value)
+          current = current.next
+     }
+     return arr
+     }
 
 }
 
 
-const zipLists = (LL_One ,LL_Two ) =>{
+class LL_Three {
+
+  constructor(){
+    this.head = null,
+    this.size = -1
+  }
+
+  zipLists(val){
+    this.head = new Node(val , this.head) 
+    this.size++
+  }
+
+  toString(){
+    let currentStr = this.head
+    let str = ''
+
+    while(currentStr){
+        str += `${currentStr.value} => ` 
+        currentStr = currentStr.next
+    }
+     str += currentStr
     
+    return str
+     }
 }
 
-module.exports = LinkedList
+
+let LL_2 = new LL_Tow()
+let LL_3 = new LL_Three()
+let llOne = new LinkedList()
+
+llOne.addOne(10)
+llOne.addOne(20)
+llOne.addOne(30)
+llOne.addOne(40)
+llOne.addOne(50)
+llOne.addOne(60)
+console.log(llOne.toString());
+
+
+
+LL_2.addOneTOLL_Tow(99)
+LL_2.addOneTOLL_Tow(88)
+LL_2.addOneTOLL_Tow(77)
+
+let length  = Math.max(llOne.size , LL_2.size)
+
+
+
+for (let i = length ; i >= 0 ; i--){
+  if(LL_2.showAll()[i]){
+
+    LL_3.zipLists(LL_2.showAll()[i])
+  }
+  if(llOne.showAll()[i]){
+
+    LL_3.zipLists(llOne.showAll()[i])
+  }
+
+}
+
+
+// console.log(LL_2.toString());
+// console.log(LL_3.toString());
+
+
+module.exports = {
+     LinkedList,
+     LL_Tow,
+     LL_Three
+}
