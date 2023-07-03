@@ -1,0 +1,1 @@
+![Linked list Zip](Untitled%20(16).jpg)
