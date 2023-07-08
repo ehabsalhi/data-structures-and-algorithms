@@ -16,4 +16,4 @@
 >
 > [2d arrays](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/23)
 >
-> [chainig](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/24)
+> [Method Chaining](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/24)
