@@ -13,3 +13,5 @@
 > [array methods](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/18)
 >
 > [Obj and RE](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/19)
+>
+> [2d arrays](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/23)
