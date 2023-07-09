@@ -19,3 +19,5 @@
 > [Method Chaining](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/24)
 >
 > [reqular expression 2](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/25)
+>
+> [.includes(), .every(), .charAt()](https://github.com/ehabsalhi/data-structures-and-algorithms/pull/26)
