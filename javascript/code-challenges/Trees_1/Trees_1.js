@@ -20,7 +20,7 @@ class BST {
        this.root = newNode
      }else{ 
           this.insertNode(this.root, newNode) 
-     }
+     }    
 
      }
 
