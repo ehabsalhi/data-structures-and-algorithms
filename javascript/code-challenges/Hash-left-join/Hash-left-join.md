@@ -1,0 +1,1 @@
+![left join](Untitled%20(44).jpg)
